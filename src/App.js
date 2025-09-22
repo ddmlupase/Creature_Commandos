@@ -1,11 +1,17 @@
-import './App.css';
-import { BrowserRouter as Router, Route, Routes, Navigate, Outlet } from 'react-router-dom';
-import Nav from './nav';
-import Home from './pages/home';
-import About from './pages/about';
-import Login from './pages/login';
-import Error from './pages/error';
-import Characters from './pages/characters';
+import "./App.css";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+  Outlet,
+} from "react-router-dom";
+import Nav from "./nav";
+import Home from "./pages/home";
+import About from "./pages/about";
+import Login from "./pages/login";
+import Error from "./pages/error";
+import Characters from "./pages/characters";
 
 const NavBarLayout = () => (
   <>
@@ -19,6 +25,7 @@ function App() {
     <Router>
       <Routes>
         <Route element={<NavBarLayout />}>
+          <Route path="/" element={<Navigate to="/home" replace />} />
           <Route path="/home" element={<Home />} />
           <Route path="/characters" element={<Characters />} />
           <Route path="/login" element={<Login />} />
