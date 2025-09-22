@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+<<<<<<< HEAD
+=======
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0d0d0d;
+  color: #f5f5f5;
+  font-family: Arial, sans-serif; 
+}
+>>>>>>> 7eeeebe (Added Aboutus and Characters Pages with CSS)
