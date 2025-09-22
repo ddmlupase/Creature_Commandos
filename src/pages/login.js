@@ -8,7 +8,7 @@ function Login() {
     const [title, setTitle] = useState("");
     
     // placeholder for username and password values since we dont have database yet
-    const realusername = 'admin';
+    const realusername = 'Rodwell';
     const realpassword = '1234';
 
     const navigate = useNavigate();
@@ -170,6 +170,7 @@ function Login() {
                     .login-card {
                         opacity: 0.3;
                         transition: all 0.3s ease;
+                        border-radius: 10px !important;
                     }
                     
                     .login-card:hover {
@@ -182,6 +183,13 @@ function Login() {
                         color: #ffffff !important;
                     }
                     
+                    .login-card:hover {
+                        opacity: 1;
+                        background-color: rgba(15, 15, 25, 0.7) !important;
+                        backdrop-filter: blur(8px) !important;
+                        border: 2px solid #0f0 !important;
+                        box-shadow: 0 0 15px rgba(0, 255, 0, 0.5), 0 0 30px rgba(0, 255, 0, 0.3), 0 0 45px rgba(0, 255, 0, 0.1) !important;
+                    }
                     .login-card:hover label {
                         color: #ffffff !important;
                     }

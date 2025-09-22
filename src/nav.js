@@ -60,8 +60,8 @@ function Nav() {
           .navbar-brand-custom:hover {
             color: #f0f0f0 !important;
             transform: scale(1.05) !important;
-            text-shadow: 2px 2px 12px rgba(0,0,0,0.8) !important;
-            filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.5)) !important;
+            text-shadow: 2px 2px 12px rgba(0,0,0,0.8), 0 0 10px #0f0 !important;
+            filter: drop-shadow(0 0 15px rgba(0, 255, 0, 0.5)) !important;
           }
 
           .custom-nav-link {
@@ -74,6 +74,7 @@ function Nav() {
             border-radius: 8px !important;
             color: rgba(255, 255, 255, 0.9) !important;
             text-shadow: 1px 1px 3px rgba(0,0,0,0.5) !important;
+            border: 1px solid transparent !important;
           }
 
           .custom-nav-link:hover {
@@ -82,19 +83,15 @@ function Nav() {
               rgba(255, 255, 255, 0.15) 0%, 
               rgba(255, 255, 255, 0.1) 100%) !important;
             transform: translateY(-2px) !important;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
-            border: 1px solid rgba(255, 255, 255, 0.2) !important;
+            border: 1px solid #0f0 !important;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5), 
+                        0 0 20px rgba(0, 255, 0, 0.3), 
+                        0 0 30px rgba(0, 255, 0, 0.1),
+                        0 4px 15px rgba(0, 0, 0, 0.2) !important;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5), 0 0 8px #0f0 !important;
           }
 
-          .custom-nav-link.active {
-            color: #ffffff !important;
-            font-weight: bold !important;
-            background: linear-gradient(135deg, 
-              rgba(255, 255, 255, 0.2) 0%, 
-              rgba(255, 255, 255, 0.1) 100%) !important;
-            border: 1px solid rgba(255, 255, 255, 0.3) !important;
-            box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.2) !important;
-          }
+          
 
           .navbar-text {
             margin-right: 1rem !important;
@@ -105,10 +102,13 @@ function Nav() {
           .navbar-toggler {
             border: 1px solid rgba(255, 255, 255, 0.3) !important;
             background: rgba(255, 255, 255, 0.1) !important;
+            transition: all 0.3s ease !important;
           }
 
           .navbar-toggler:hover {
             background: rgba(255, 255, 255, 0.2) !important;
+            border: 1px solid #0f0 !important;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.3) !important;
           }
 
           .navbar-toggler-icon {
@@ -176,7 +176,7 @@ function Nav() {
                 <>
                   <li className="nav-item">  
                     <span className="navbar-text" style={userGreetingStyles}>
-                      Hello, {user}
+                      Hello, {user} pogi
                     </span>
                   </li>
                   <li className="nav-item">
