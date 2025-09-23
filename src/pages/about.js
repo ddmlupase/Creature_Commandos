@@ -16,7 +16,8 @@ export default function About() {
     backgroundRepeat: 'no-repeat',
     backgroundAttachment: 'fixed', 
     minHeight: '100vh',
-    position: 'relative'
+    position: 'relative',
+    paddingTop: '100px' // Add padding to push content below navbar
   };
 
   const overlayStyle = {

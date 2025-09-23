@@ -31,7 +31,7 @@ function Login() {
             login(username);
             navigate("/home");
         } else {
-            alert("Invalid credentials. Try admin / 1234");
+            alert("Invalid credentials. Please try again.");
         }
     }
     
@@ -45,7 +45,8 @@ function Login() {
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         position: 'relative',
-        paddingLeft: '1100px'
+        paddingLeft: '1100px',
+        paddingTop: '100px' // Add padding to push content below navbar
     };
 
     const overlayStyles = {
@@ -250,7 +251,7 @@ function Login() {
                     
                     <form onSubmit={handleLogin}>
                         <div style={inputGroupStyles}>
-                            <label style={labelStyles}>Username (Email Address)</label>
+                            <label style={labelStyles}>Username</label>
                             <input 
                                 type="text" 
                                 className="login-input"
@@ -281,7 +282,7 @@ function Login() {
                     </form>
                     
                     <div className="hint-text" style={hintStyles}>
-                        Demo: admin / 1234
+                        Hint: IT Elective 3 Professor
                     </div>
                 </div>
             </div>

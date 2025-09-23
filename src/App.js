@@ -55,12 +55,15 @@ function App() {
     <AuthProvider>
       <Router>
         <Routes>
+          {/* Default route - redirects localhost:3000 to localhost:3000/login */}
+          <Route path="/" element={<Navigate to="/login" replace />} />
+          
           <Route element={<NavBarLayout />}>
             <Route path="/home" element={<Home />} />
             <Route path="/characters" element={<Characters />} />
             <Route path="/login" element={<Login />} />
             <Route path="/about" element={<About />} />
-            <Route path="/error" element={<Error />} />
+            <Route path="*" element={<Error />} />
           </Route>
         </Routes>
       </Router>

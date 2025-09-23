@@ -27,6 +27,12 @@ function Nav() {
           }
 
           .navbar {
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            z-index: 1000 !important;
+            width: 100% !important;
             padding: 1rem 0 !important;
             min-height: 80px !important;
             background: linear-gradient(135deg, 
@@ -90,8 +96,6 @@ function Nav() {
                         0 4px 15px rgba(0, 0, 0, 0.2) !important;
             text-shadow: 1px 1px 3px rgba(0,0,0,0.5), 0 0 8px #0f0 !important;
           }
-
-          
 
           .navbar-text {
             margin-right: 1rem !important;
