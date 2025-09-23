@@ -180,7 +180,7 @@ function Nav() {
                 <>
                   <li className="nav-item">  
                     <span className="navbar-text" style={userGreetingStyles}>
-                      Hello, {user} pogi
+                      Hello, {user}
                     </span>
                   </li>
                   <li className="nav-item">
