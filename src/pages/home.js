@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 
 const Home = () => {
@@ -100,3 +101,22 @@ const Home = () => {
 };
 
 export default Home;
+=======
+import { useNavigate } from "react-router-dom";
+
+function Home() {
+    const navigate = useNavigate();
+
+    const proceedCharacters = () => {
+        navigate('/characters');
+    }
+    return (
+        <div>
+            <h1>Home Page</h1>
+            <button type="button" class="btn btn-success" onClick={proceedCharacters}>Characters</button>
+        </div>
+    );
+}
+
+export default Home;
+>>>>>>> e38a55194a1b844f881006f2dba46ec49a615b88
