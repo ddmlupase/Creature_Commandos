@@ -121,29 +121,7 @@ function Login() {
         marginBottom: '30px'
     };
 
-    const linkStyles = {
-        color: 'rgba(14, 165, 233, 0.3)', // Made transparent
-        textDecoration: 'none',
-        fontSize: '14px',
-        marginBottom: '15px',
-        display: 'block',
-        textAlign: 'center',
-        transition: 'color 0.3s ease' // Added transition
-    };
 
-    const createAccountStyles = {
-        width: '100%',
-        padding: '16px',
-        backgroundColor: 'transparent',
-        color: 'rgba(255, 255, 255, 0.3)', // Made transparent
-        border: '2px solid rgba(108, 117, 125, 0.3)', // Made transparent
-        borderRadius: '25px',
-        fontSize: '16px',
-        fontWeight: '500',
-        cursor: 'pointer',
-        transition: 'all 0.3s ease', // Enhanced transition
-        marginBottom: '30px'
-    };
 
     const hintStyles = {
         textAlign: 'center',
@@ -153,16 +131,6 @@ function Login() {
         transition: 'color 0.3s ease' // Added transition
     };
 
-    const helpLinkStyles = {
-        position: 'absolute',
-        bottom: '20px',
-        left: '50%',
-        transform: 'translateX(-50%)',
-        color: 'rgba(14, 165, 233, 0.3)', // Made transparent
-        textDecoration: 'none',
-        fontSize: '14px',
-        transition: 'color 0.3s ease' // Added transition
-    };
 
     return (
         <>
