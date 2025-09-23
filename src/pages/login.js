@@ -8,7 +8,7 @@ function Login() {
     const [title, setTitle] = useState("");
     
     // placeholder for username and password values since we dont have database yet
-    const realusername = 'Rodwell';
+    const realusername = 'Weasel';
     const realpassword = '1234';
 
     const navigate = useNavigate();
